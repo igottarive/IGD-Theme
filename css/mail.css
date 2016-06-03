@@ -1,0 +1,43 @@
+a {
+	color: #0000EE;
+}
+body, #header h1, #header h2, p {margin: 0; padding: 0;}
+#main {
+	border: 3px solid #014cb1;
+	background-color: white;
+}
+#center {
+	padding: 1em;
+	background-color: #ccc;
+}
+img {display: block;}
+#top-message p, #bottom-message p {
+	color: #3f4042;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#header h1 {color: #ffffff !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; font-size: 24px; margin-bottom: 0!important; padding-bottom: 0; }
+#header h2 {color: #ffffff !important; font-family: Arial, Helvetica, sans-serif; font-size: 24px; margin-bottom: 0 !important; padding-bottom: 0; }
+#header p {color: #ffffff !important; font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif; font-size: 12px;  }
+h1, h2, h3, h4, h5, h6 {margin: 0 0 0.8em 0;}
+h3 {font-size: 28px; color: #444444 !important; font-family: Arial, Helvetica, sans-serif; }
+h4 {font-size: 22px; color: #4A72AF !important; font-family: Arial, Helvetica, sans-serif; }
+h5 {font-size: 18px; color: #444444 !important; font-family: Arial, Helvetica, sans-serif; }
+p {
+	padding: 1em;
+	font-size: 1em;
+	color: #444444 !important;
+	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", sans-serif;
+	line-height: 1.5;
+}
+/*
+  Assumes the 1st paragraphis the welcome message.
+*/
+p:nth-child(1) {
+	font-size: 1.5em;
+	line-height: 3em;
+	background-color: #72A435;
+	color: #1F4A9F ! important;
+	padding: 0;
+	text-indent: 1em;
+}

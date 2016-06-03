@@ -1,0 +1,20 @@
+/*
+This file is http://dev.igottadrive.com/joe-d7/sites/all/themes/igd/css/rateitall-gadget.css
+*/
+#searchBox {
+	display: none;
+}
+#header {
+	display: none;
+}
+#topMenu {
+	background-color: #1374a1;
+	-moz-border-radius: 7px 7px 0 0; -webkit-border-radius: 7px 7px 0 0; border-radius: 7px 7px 0 0;
+
+}
+#topMenu .tab {
+	-moz-border-radius: 7px 7px 0 0; -webkit-border-radius: 7px 7px 0 0; border-radius: 7px 7px 0 0;
+}
+.viewPort {
+	height: 235px;
+}

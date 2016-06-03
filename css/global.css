@@ -1,0 +1,2278 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/*
+* Change log
+*
+igd-user-header-mini-menu*	V0001, initial version, n/n/2012, jjp
+Overhaul for Drupal e-commerce, v2, June/2013, jjp
+[jjp001] Styling for partner link popup, Nov 5, 2013
+[jjp002] Added styling for games section, December 14, 2013
+[jjp003] Added styling for new table popop, December 18, 2013
+[jjp004] Added styling for error messages, 8/8/14
+[jjp005] Added styling for support request form 8/8/14
+[jjp006] Added styling for Ohio movie 8/16/14
+[jjp007] Added styling for practice tests landing page 10/9/14
+[jjp008] Added styling for driving-school pages [4/15]
+*/
+
+/*
+  Items to not show in a mobile window.
+*/
+#region-dashboard-sidebar, .igd-slider, .site-header-right, .igd-tip-all,
+.igd-feedback-button, .igd-help-button, .site-header-left, .igd-rateitall,
+.commerce-order-commerce-order .commerce-registration,
+.igd-user-available-products .product-image {
+	display: none;
+}
+/*
+  Setup the fonts.
+*/
+body, h2, h3, h4, h5 {
+	font-family: Arial, sans-serif, regular;
+}
+h3 {
+	font-size: 1em;
+}
+.small-text {
+	font-size: .7em;
+}
+h1, .site-header-left, .site-header-right, .branding-url {
+	font-family: "Varela Round",Arial, sans-serif;
+	letter-spacing: 0;
+}
+.clear-both {
+	clear: both;
+}
+/*
+  General styling.
+*/
+.igd-header-color {
+	background-color: #72a435;
+}
+.igd-body-color {
+	background-color: #ccc;
+}
+ol li, ul li {
+	margin-top: .4em;
+	margin-left: 10px;
+}
+ul {
+	margin-top: 1.5em;
+}
+table thead tr th {
+  color: #fff;
+  background-color: #63a13b;
+}
+.igd-invisible {
+	display: none;
+}
+table, th, td, td.active, th.active {
+	border: solid 1px #000;
+}
+th {
+	background-color: #ccc;
+}
+/*
+	Style the error message divs returned from various Drupal functions, such as login failure
+*/
+div#messages {
+	margin-top: 25px; /* skip below the hanging key */
+}
+div#messages div.error {
+	border-width: 3px;
+	border-radius: 8px;
+}
+/*
+  Fix bug with the "previous" pager button.
+*/
+li.pager-previous a {
+	width: 65px !IMPORTANT;
+}
+/*
+  Turn off RSS feed for taxonomy pages.
+*/
+.page-taxonomy .feed-icon {
+	display: none;
+}
+/*
+  Styling for an embedded video container/
+*/
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*
+  Styling for stand-alone blog entries.
+*/
+.node-driving-tip p {
+	padding-top: 5px;
+}
+/*
+  Center the "sharethis" buttons. This will impact all content that includes
+  the buttons, such as driving tips and blog entries.
+*/
+.sharethis-wrapper {
+	text-align: center;
+}
+.node-blog .igd-blog-title, .igd-tip-all .views-field-title {
+	color: #0B6E1A;
+	font-size: 1.2em;
+	font-style: bold;
+	margin-bottom: 1em;
+}
+.node-blog .blog-title {
+	color: #1f4a9f;
+	font-size: 1.2em;
+	font-style: bold;
+	margin-bottom: 5px;
+}
+.node-blog {
+	padding-top: 5px;
+}
+.node-blog h2 {
+	margin-bottom: 0;
+}
+.node-blog footer {
+	float: left;
+}
+.node-blog .field-type-taxonomy-term-reference .field-item {
+	padding-right: 4px;
+}
+.node-blog .blog-image {
+	display: block;
+	width: 85%;
+	height: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.node-blog .blog-image-subtext {
+	width: 85%;
+	margin: -1.5em auto 1em auto;
+	text-align: center;
+	font-size: small;
+}
+.node-blog .node-links {
+	display: none;
+}
+.node-blog ul li, .node-blog ol li {
+	display: block;
+}
+/*
+  Styling for blog & driving tips all teaser pages (i.e., /blog, /driving-tips).
+*/
+.igd-blog-all, .igd-tip-all {
+	padding-top: 0 !important;
+}
+.igd-blog-all .node-blog, .igd-tip-all .views-row {
+	border: none;
+	border-bottom: solid 1px #000;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+}
+.igd-blog-all h2 a {
+	font-size: .6em;
+}
+.igd-blog-all .node-blog footer {
+	float: left;
+}
+.igd-blog-all .node-blog p {
+	clear: both;
+}
+.igd-tip-all img {
+	float:left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.igd-tip-all .views-field-title {
+	margin-top: 10px;
+}
+.igd-tip-all .tips-title {
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+.igd-tip-all .igd-video-no {
+	padding-left: 0;
+}
+.igd-video-share-request {
+	margin-bottom: -10px;
+	font-size: .7em;
+	text-align: center;
+}
+/*
+  Styling for date/author fields for all blog usage.
+*/
+.igd-date-author, .igd-blog-categories footer {
+	font-size: 1em;
+	color: #999999;
+	font-style: italics;
+}
+/*
+  Styling for H2 in all blog usage.
+*/
+.igd-blog-search-results h2, .igd-blog-all h2 {
+	margin-bottom: -4px;
+}
+/*
+  Styling for blog paragraph
+*/
+.igd-blog-search-results p, .igd-blog-all p {
+	margin-top: 15px;
+}
+.igd-blog-search-results .views-row, .igd-blog-all .views-row {
+	border-bottom: 1px solid #999999;
+	margin-bottom: 2px;
+}
+.igd-blog-search-results .views-row-last, .igd-blog-all .views-row-last {
+	border: none;
+	margin-bottom: 0;
+}
+/*
+  Styling for the category select box on the blog search form.
+*/
+.igd-blog-search {
+	background-image: url("../images/green_gradient_bg_300h.png");
+	background-repeat: repeat-x;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	padding: 5px 0 5px 0;
+	margin-bottom: 5px;
+}
+.igd-blog-search .form-select {
+	background-color: #ccc;
+}
+/*
+  Styling for categories label.
+*/
+.igd-categories, .node-blog .field-name-field-terms .field-label {
+	background: url(../images/category_icon.png) no-repeat 0 0;
+	font-size: 0;
+	color: transparent;
+	padding: 16px 10px;
+}
+/*
+  Styling for the blog search form block.
+*/
+.igd-blog-search label, .igd-blog-search .form-text, .igd-blog-search .form-type-select{
+	margin-left: 5px;
+}
+.igd-blog-search label {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 3px;
+}
+.igd-blog-search .form-text {
+	background-color: #ccc;
+	border: none;
+	-webkit-box-shadow: inset 2px 2px 2px 0 #000;
+	-moz-box-shadow: inset 2px 2px 2px 0 #000;
+	box-shadow: inset 2px 2px 2px 0 #000;
+}
+.igd-blog-search .form-submit {
+	height: 27px; /* height of image */
+	width: 33px; /* width of image */
+	background: url(../images/search_magnifyer.png) no-repeat 0 0;
+	border-style: none;
+	font-size: 0;
+	color: transparent;
+	background-color: #014cb1;
+	margin-top: 35px !important;
+}
+.igd-blog-search .views-widget-filter-search_api_views_fulltext {
+	padding-right: .25em;
+}
+.igd-blog-search .views-widget-filter-field_terms {
+	padding-right: .5em;
+}
+.igd-blog-search .views-exposed-widgets {
+	margin-bottom: 0;
+}
+/*
+  Styling for the blog search results page.
+*/
+.igd-blog-search-results {
+	padding-top: 20px;
+}
+/*
+  Styling for the article categories page(s).
+*/
+.igd-blog-categories .info-block {
+	padding-top: 20px;
+}
+.igd-blog-categories .blog-title {
+	font-size: 0;
+	color: transparent;
+}
+.igd-blog-categories p {
+	clear: both;
+}
+/*
+  Styling for a blog summary block.
+*/
+.summary-block-blog .view-content {
+	padding: 10px;
+}
+.summary-block-blog .views-field {
+	margin-bottom: 0;
+}
+.summary-block-blog span {
+	font-size: 1.3em;
+}
+.summary-block-blog .blog-date {
+	font-size: .8em;
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+/*
+  Styling for a summary block, customer review block.
+*/
+.summary-block, .igd-customer-reviews {
+	margin: 0 0 5px 0;
+	background-color: #fff;
+	border: 2px solid #40882e;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.view-state-page-bundle-listing .node-title,
+.summary-block h2, .igd-customer-reviews h2 {
+	color: #fff !IMPORTANT;
+	font-size: 1.6em;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: -1px -1px 0 -1px;
+	background-image: url("../images/green_gradient_footer.png");
+	background-repeat: repeat-x;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.summary-block h2 a, .igd-customer-reviews h2 a {
+	color: #fff!important;
+	text-decoration: none;
+}
+/*
+  Styling for a program summary block.
+*/
+.summary-block-program p {
+	display: inline;
+	margin: 0;
+}
+.summary-block-program .summary-text {
+	font-size: 1.1em;
+	margin: 10px 5px;
+	margin-top: 10px;
+}
+.summary-block-program .intro-text {
+	color: #1b759f;
+	font-weight: bold;
+}
+/*
+  Styling for Customer Review" block.
+*/
+.igd-customer-reviews p {
+	font-size: 1.2em;
+	color: #0B6E1A;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+ .igd-customer-reviews ul {
+	padding: 0 5px 0 5px;
+	list-style: none;
+	text-align: center;
+	font-size: 1.2em;
+}
+ .igd-customer-reviews ul li {
+	margin-top: 5px;
+}
+/*
+  Styling for the resources block on the student page.
+*/
+.resources-block p {
+	margin: 0 10px 5px 10px;
+	padding-top: 5px;
+}
+.resources-block .resources-paragraph {
+	border-top: solid 2px #ccc;
+}
+/*
+  Styling for the student-info1 block on the student page.
+*/
+.student-info1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+	background-image: url("../images/blue_gradient_footer.png");
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.student-info1 span {
+	font-size: 1.2em;
+}
+/*
+  [jjp001] Style the partner pop-up block and link.
+*/
+#block-igd-partner-coupon-pricing-igd-partner-coupon-pricing-block {
+	background-image: url("../images/green_gradient_footer.png");
+	background-repeat: repeat-x;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+#block-igd-partner-coupon-pricing-igd-partner-coupon-pricing-block a {
+	color: white;
+	text-decoration: none;
+}
+/*
+  Now for the state information block on the student page.
+*/
+.state-info-list {
+	padding: 5px !important;
+}
+.state-info-list h2 {
+	font-size: 1.75em;
+}
+.state-info-list h3 {
+	margin-bottom: 0;
+	margin-top: .4em;
+}
+.state-info-list .view-content {
+	height: 600px;
+	overflow-y: scroll;
+	width: 50%;
+}
+.state-info-list .view-header {
+	width: 40%;
+	float: right;
+}
+.state-info-list .view-content {
+	background-color: #ccc;
+	padding-left: 1em;
+}
+.state-info-list .view-content .state-name {
+	margin-top: 2em;
+}
+.state-info-list img {
+	width: 35px;
+	height: auto;
+}
+.state-info-list .state-name {
+	color: red;
+}
+.state-info-list ul {
+	list-style-image:url("../images/check_symbol.png");
+	list-style-position: inside;
+	margin-top: 10px;
+}
+.state-info-list li {
+	margin-top: 0;
+	margin-left: 0;
+}
+.state-info-list .info-header {
+	padding: 0 2em;
+}
+.state-info-list .view-footer {
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+.state-info-list-group {
+	border-bottom: solid 1px #000;
+	margin-right: 10px;
+}
+.state-info-list .views-row-last {
+	border: 0 !important;
+}
+.state-block-list {
+	margin-left: .25em;
+}
+/*
+  Styling for the rateiall gadget. .ria_gadget_footer
+*/
+#ria_rating_gadget {
+	border-style: none!important;
+	width: 214px!important;
+}
+.igd-rateitall {
+	border: 2px solid #1374a1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.igd-rateitall iframe {
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;
+}
+.ria_gadget_footer {
+	-moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px;
+}
+/*
+  Styling for FAQ page(s).
+*/
+.igd-faqs ul {
+	padding-left: 1em;
+}
+.igd-faqs-product{
+	border-top: solid 1px #ccc;
+}
+.igd-faqs .igd-faqs-header {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.igd-faqs .igd-faqs-question {
+	font-size: 1.2em;
+	color: #0B6E1A;
+	margin-bottom: 5px;
+}
+.igd-faqs .igd-faqs-question p {
+	margin-bottom:0px;
+}
+.igd-faqs .igd-faqs-answer {
+	margin-bottom: 10px;
+}
+/*********************************************
+  Header Section
+**********************************************/
+/*
+  General header styles
+*/
+.site-header-left, .site-header-right {
+	padding-top: 5px;
+	z-index: 11;
+}
+.site-header-left {
+	margin-left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align:center;
+}
+.site-header-left .headline-text {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #1f4a9f;
+	text-align: center;
+	margin: 0;
+}
+.site-header-left .secondline-text {
+	padding-top: 0;
+	font-size: 1.5em;
+	line-height: 1em;
+	font-weight: bold;
+	color: #1f4a9f;
+}
+.site-header-left a {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-left: .3em;
+	font-weight: normal;
+	text-decoration: none;
+	color: #fff;
+}
+/*
+  Styling for the social buttons and email button.
+*/
+.igd-social-buttons {
+	float: right;
+}
+.igd-graduation-credits {
+	float: right;
+}
+#block-google-plusone-google-plusone-block {
+	float: right;
+}
+#block-fb-social-igd-facebook {
+	float: right;
+	padding-right: 15px;
+}
+.header-contact-info {
+	float: right;
+}
+/*
+  Styling for the login section.
+*/
+.igd-login {
+	margin-right: 30px;
+	margin-top: 25px;
+	float: right;
+}
+.igd-login a {
+	color: #fff;
+	text-decoration: none;
+	padding-left: 4px;
+	line-height: 27px;
+}
+.igd-login img {
+	padding-top: 5px;
+}
+/*
+  Setup for the "feedback / help flags" in the header section.
+*/
+/*******************
+  Temporary fix for lack of feedback button. There should only be a margin of
+  5px on the top and not the 20px margins top & bottom
+********************/
+.igd-feedback-button img, .igd-help-button img {
+	float: right;
+	/*margin-top: 5px;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.igd-feedback-button .form-item {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*
+  Branding zone setup.
+*/
+.branding-setup {
+	height: 73px; /* height of hand... */
+	margin-top: -22px; /* moves whole zone up to accomodate top hand overhang */
+	background-image: url("../images/nav_bar_end.png"), url("../images/nav_bar_slice.png");
+	background-repeat: no-repeat, repeat-x;
+	background-size: auto 33px, auto 33px;
+	background-position: right, left;
+}
+.branding-hand {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 66px; /* height of hand... */
+	z-index:10;
+}
+.branding-hand img {
+	height: 87px;
+	width: 49px;
+	margin-top: 20px;
+}
+.branding-url {
+	padding-left: 50px;
+	position: absolute;
+	bottom: 19.5px;
+	font-weight: bold;
+}
+.branding-url a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+}
+#block-delta-blocks-page-title h1 {
+	color: #0b6e1a;
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+}
+/*
+  Menu zone setup.
+*/
+#zone-menu {
+	background-color: #fff;
+}
+.nice-header-setup {
+	margin: 0 0 10px 50px;
+}
+/*
+*/
+.nice-header-setup .menuparent li, .nice-header-setup .menu-parent {
+	display: none;
+}
+/*
+  Fix-up for nice header update.
+*/
+.xnice-header-setup ul li.menuparent {
+	background-image: none;
+	background-color: #eee;
+}
+/*
+*/
+.nice-header-setup a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+}
+.nice-header-setup a:hover, .nice-header-setup a:active, .nice-header-setup a.active{
+	color: #0b6e1a;
+}
+.nice-header-setup ul li {
+	background: #fff;
+	border: none;
+}
+.nice-header-setup ul li a {
+	color: #72a435
+}
+
+/*
+  The "sub header" area.
+*/
+.igd-user-zone {
+	min-height: 80px;
+}
+/*
+  Setup so the header message will not wrap in case the title is too long...
+*/
+.igd-header-message {
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 0;
+	padding-top: 13px;
+	color: #1b759f;
+}
+.igd-header-message p {
+	margin-bottom: 0;
+}
+/********************************* Content Section **********************************************/
+/*
+  General content styling.
+*/
+
+.content-styling H2 {
+	font-family: "Varela Round";
+	color: #006633;
+}
+.content-styling H3 {
+	font-family: "Varela Round";
+	font-style: italic;
+}
+.content-styling HR {
+	color: #014cb1;
+	height: 3px;
+}
+/*
+  Info block styling. Also applies to various blocks in user management & e-commerce.
+*/
+.info-block,
+#login-form,
+.commerce-checkout-form-registration,
+#security-questions-user-edit-form,
+#commerce-checkout-form-complete,
+#commerce-checkout-form-review,
+.commerce-order-commerce-order,
+.cart-empty-page {
+	background-color: #fff;
+	border: solid 3px #014cb1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin: 0 0 5px 0;
+	padding: 5px;
+}
+/*
+ *Checkout completion page adjustments
+*/
+.completionThanks {
+  font-size: 2em;
+}
+.completionBold {
+  font-weight: bold;
+}
+/*
+ * END Checkout completion page adjustments
+*/
+.info-block .headline-text {
+	font-size: 20px;
+	color: #0b6e1a;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+.info-block .secondline-text {
+	font-size: 18px;
+	font-style: italic;
+	color: #000;
+}
+/*
+  Provide a class to move past the hand for the first block on a page.
+*/
+.first-block {
+	padding-top: 0 !IMPORTANT;
+}
+/*
+  State selector box styling - new.
+*/
+.state-selector {
+	border: solid 2px #000;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin-bottom: 5px;
+	background-color: #000;
+}
+.state-selector .headline-text {
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	text-align: center;
+	padding: 0 30px 0 30px;
+}
+.state-selector .secondline-text {
+	font-size: 16px;
+	line-height: 18px;
+	color: #000;
+	text-align: center;
+	padding: 0 30px 0 30px;
+}
+.state-selector .container-inline {
+	margin: 5px auto;
+	width: 150px;
+}
+.state-selector .ctools-jump-menu-button {
+	margin-left: 10px;
+}
+.state-selector .view-header {
+	background-color: #ffcc00;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+.state-selector .black-spacer {
+	height: 10px;
+	background-image: url("../images/stripe_bar.png");
+	background-repeat: repeat-x;
+}
+/*
+  Styling for the front page and parent page movie viewers.
+	- add Ohio state movie styling [jjp006]
+*/
+.igd-movie, .igd-parent-movie, .igd-movie-main {
+	background-color: #136d20;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+.igd-movie {
+	border: solid 10px #136d20;
+	border-bottom: solid 6px #136d20;
+}
+.igd-movie-main {
+	border: solid 30px #1374a1;
+}
+.igd-parent-movie {
+	padding: 5px 10px 0 10px;
+}
+.igd-parent-movie h2 {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.igd-parent-movie p {
+	color: #fff;
+	line-height: 1em;
+	margin-bottom: 10px;
+}
+.igd-parent-movie .movie {
+	border: 2px solid #fff;
+	margin-bottom: 7px;
+}
+/*
+  State page styling.
+*/
+.igd-state-generic-info-block .item-list ul, .igd-state-generic-info-block .item-list li{
+	margin:0px;
+}
+.igd-state-generic-info-block img {
+	border: solid 1px #d8d8d8;
+	margin-right: 15px;
+	float: left;
+}
+.igd-practice-tests iframe {
+	width: 100%;
+	height: 400px;
+}
+/*
+  Styling for the state tabs
+*/
+.state-tabs  {
+	border: solid 3px #014cb1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin-bottom: 5px;
+}
+.state-tabs img {
+	border: 3px groove #2E90BD;
+	margin: 5px 5px 0 0;
+	width: 25%;
+}
+.state-tabs li {
+	list-style: decimal outside none;
+	margin-top: 1em;
+}
+.state-tabs ol, .state-tabs ul {
+	margin-left: 15px;
+	margin-top: 1em;
+}
+.state-selector-block .secondline-text {
+}
+/*
+  Style the product purchase block.
+*/
+/*
+  Info block styling.
+*/
+.purchase-block {
+	background-color: #fff;
+	border: solid 3px #000;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.purchase-block .headline-text {
+	text-align: center;
+	font-family: "Varela Round",Arial, sans-serif;
+	font-size: 1.25em;
+	line-height: 1.1em;
+	font-weight: bold;
+	background-color: #ffcc00;
+	-moz-border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; border-radius: 8px 8px 0 0;
+	color: #000;
+	padding-top: 5px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.purchase-block .black-spacer {
+	height: 10px;
+	background-image: url("../images/stripe_bar.png");
+	background-repeat: repeat-x;
+}
+.purchase-block .product-icon img {
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+	float: left;
+}
+.purchase-block .product-item {
+	border: 2px solid #ca0814;
+	background-color: #000;
+	color: #fff;
+}
+.purchase-block .views-row-first {
+	background-image: url("../images/featured_indicator.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 130px 20px;
+}
+.purchase-block li .views-field-field-product-type {
+	color: #0b6e1a;
+	line-height: 1em;
+}
+.purchase-block .views-row .views-field-field-product-type {
+	color: #ffcc00;
+}
+.purchase-block .item-list li {
+	margin: 0;
+	padding: 3px 10px;
+}
+.purchase-block .product-purchase-link {
+	margin-bottom: 10px;
+}
+.purchase-block .product-featured-text {
+	color: black;
+	font-size: .8em;
+}
+.purchase-block .final-price {
+	float: right;
+	margin-top: -30px;
+	color: #ffc500;
+}
+.purchase-block	.product-short-description {
+	font-size: .8em;
+  /* igdprod: John and Joe aren't sure if this is necessary (?) */
+  /* clear: both */
+}
+.view-state-page-bundle-listing .form-submit,
+.purchase-block li a, .purchase-block .form-submit,
+.igd-user-available-products li a, .igd-user-available-products .form-submit,
+.term-listing-heading .vocabulary-partners .form-submit, .practice-tests-landing .practice-test-purchase {
+	background-image: none;
+	background-color: #ffcc00;
+	text-decoration: none;
+	color: #000;
+	font-size: .8em;
+	padding: 0 15px;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.purchase-block .views-field-field-product-type {
+	color: #000;
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-top: 8px;
+}
+.purchase-block .views-field-description {
+	clear: both;
+}
+.purchase-block ul li {
+	background-color: #fff;
+	padding: 0;
+	border-bottom: 1px solid #000;
+}
+.purchase-block ul .views-row-last {
+	-moz-border-radius: 0 0 7px 7px; -webkit-border-radius: 0 0 7px 7px; border-radius: 0 0 7px 7px;
+}
+.purchase-block li {
+	margin: 0;
+}
+.purchase-block ul {
+	margin-bottom: 0;
+}
+/*
+  Styling for the infographics (a.k.a., fun facts) menu.
+*/
+.igd-fun-facts-menu {
+	margin-bottom: 5px;
+	background-color: #fff;
+	border: solid 2px #398dcf;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-fun-facts-menu h2 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	padding: 5px 0;
+	margin: -1px -1px 0 -1px;
+	color: #fff;
+	text-align: center;
+	background-image: url("../images/finger_bullseye.png"),url("../images/fun_facts_menu_gradient.png");
+	background-repeat: no-repeat, repeat-x;
+	background-position: 10px 0;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-fun-facts-menu ul li {
+	list-style: none;
+	font-size: 1.25em;
+	margin: 0 10px;
+	padding: .25em 0 .25em .5em;
+	border-bottom: solid 1px #cccccc;
+}
+.igd-fun-facts-menu ul li.last {
+	border-bottom: none !important;
+}
+.igd-fun-facts-menu ul.menu li  .active {
+	color: #0062A0 !important;
+}
+.igd-fun-facts-menu ul.menu li a:hover {
+	color: #fff !important;
+}
+.igd-fun-facts-menu ul li a:link {
+	color: #000 !important;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:visited {
+	color: #000 !important;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:hover {
+	color: #fff !important;
+	background-color: #1e68ba;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:active  {
+	text-decoration: none;
+}
+/*
+  Styling for the infographics collection view.
+*/
+.infographic-thumbnail {
+	float: left;
+	margin-right: .5em;
+}
+/*
+  Styling for the driving tips menu.
+*/
+.igd-video-yes {
+	padding-left: 30px;
+	background-image: url("../images/video_icon_blue_25x11.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.igd-video-no {
+	padding-left: 30px;
+}
+.igd-driving-tips-menu {
+	margin-bottom: 5px;
+	background-color: #fff;
+	border: solid 2px #40882e;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-driving-tips-menu h2 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	padding: 5px 0 5px 50px;
+	margin: -1px -1px 0 -1px;
+	color: #fff;
+	text-align: center;
+	background-image: url("../images/car_icon.png"),url("../images/green_gradient_bg_300h.png");
+	background-repeat: no-repeat, repeat-x;
+	background-position: 5px center, 5px 0;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-driving-tips-menu h2 a {
+	color: #fff;
+	text-decoration: none;
+}
+.igd-driving-tips-menu ul {
+	margin: 0;
+}
+.igd-driving-tips-menu ul li {
+	list-style: none;
+	font-size: 1.25em;
+	margin: 0 10px;
+	padding: .25em 0 .25em .5em;
+	border-bottom: solid 1px #cccccc;
+}
+.igd-driving-tips-menu ul li.views-row-last {
+	border-bottom: none;
+}
+.igd-driving-tips-menu ul li a:link,
+.igd-driving-tips-menu ul li a:hover,
+.igd-driving-tips-menu ul li a:visited,
+.igd-driving-tips-menu ul li a:active {
+	text-decoration: none;
+}
+.igd-driving-tips-menu ul li a:visited {
+	color: #000;
+}
+.igd-driving-tips-menu ul li:hover {
+	background-color: #88def9;
+}
+.igd-driving-tips-menu ul li a.active, .igd-driving-tips-menu ul li a:hover {
+	color: #0062A0;
+}
+/******************************************************
+ Driving school pages. jjp*
+ ******************************************************/
+div.driving-schools-list {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
+}
+article.node-driving-school p {
+	margin-top: 1em;
+}
+article.node-driving-school p.driving-school-link a {
+	background-color: #fc0;
+	border-radius: 10px;
+    color: #000;
+    padding: .25em 1em;
+    text-decoration: none;
+}
+/********************************* Footer Section **********************************************/
+/*
+  Footer Styles
+*/
+.site-footer1 {
+	background-image: url("../images/blue_gradient_footer.png");
+}
+.site-footer1 .googleplusone {
+	color: white;
+	line-height: 2.6em;
+	display: block;
+}
+.site-footer2 {
+	background-image: url("../images/green_gradient_footer.png");
+}
+.site-footer2 .footer-info {
+	text-align: center;
+	font-size: 12px;
+	color:#fff;
+	padding-bottom: 10px;
+}
+/*
+  Footer nice menu setup
+*/
+.nice-footer-setup ul li {
+	list-style: none;
+	font-size: 1em;
+	border: none;
+	border-right: 1px solid #fff;
+	background-color: transparent;
+}
+.nice-footer-setup ul li.last {
+	border: none !important;
+}
+.nice-footer-setup ul li a:link, .nice-footer-setup a:hover,.nice-footer-setup a:visited,.nice-footer-setup a:active {
+	text-decoration: none;
+}
+.nice-footer-setup ul li a:link, .nice-footer-setup ul li a:visited {
+	color: #fff;
+}
+.nice-footer-setup ul li a:hover {
+	color: #df601d;
+}
+.nice-footer-setup ul li .active, .nice-footer-setup ul li a:active {
+	color: #95b4e7!important;
+	background-color: transparent;
+}
+/******************************* slideshow **********************************************/
+/*
+  General flexslider setup.
+*/
+.igd-slider .flexslider {
+	margin: 0 0 5px 0;
+}
+.igd-slider .flex-nav-container {
+	margin-bottom: 0;
+}
+.igd-slider .flex-viewport {
+	padding-left: 13px;
+}
+/*
+  Setup controls - both side and bottom.
+*/
+.igd-slider .flex-direction-nav .flex-prev,
+.igd-slider .flex-direction-nav .prev {
+	opacity: 1;
+	left: 0;
+}
+.igd-slider .flex-direction-nav .flex-next,
+.igd-slider .flex-direction-nav .next {
+	opacity: 1;
+	right: 0;
+	background-position: -40px;
+}
+.igd-slider .flex-direction-nav a {
+	height: 60px;
+	width: 40px;
+	background: url("../images/igd_bg_direction_nav.png");
+	background-repeat: no-repeat;
+	margin: -35px 0 0;
+}
+.igd-slider .flexslider {
+	border: solid 30px #1374a1;
+	background-color: #fff;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-slider .flex-control-nav {
+	bottom: 2px;
+}
+.igd-slider .flex-control-paging li a.flex-active {
+	height: 16px;
+	width: 18px;
+	background-image: url("../images/slider_dot_active.png");
+}
+.igd-slider .flex-control-paging li a {
+	height: 15px;
+	width: 16px;
+	background-image: url("../images/slider_dot_inactive.png");
+}
+.igd-slider .views_slideshow_controls_text {
+	visibility: hidden;
+}
+/*
+  Setup the box within the slider
+*/
+.igd-slider .flexslider {
+	padding-bottom: 10px;
+}
+.igd-slider h2 {
+	width: 95%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 0;
+	font-size: 2em;
+	margin: 0;
+}
+.igd-slider li {
+	margin: 0;
+}
+.igd-slider-text {
+	width: 45%;
+	float:right;
+	font-size: 1.4em;
+}
+/*
+  Note that that the text is encapsulated in a <p> if there are more than 1 slide...
+*/
+.igd-slider p {
+	margin: 0 22px 0 0;
+}
+img.igd-slider-image {
+	width: 48% !important;
+	height: auto;
+	padding-bottom: 10px !important;
+}
+/*
+  Styling for specific pages.
+*/
+/*
+  Styling for generic pages where the "main page content" block was used with context. This is needed as there is no way
+  to assign a class to the block within context. Note it is assumed that the "main page content" block will be the first
+  block on a page.
+*/
+.igd-main-block .info-block {
+	padding-top: 20px;
+}
+/*
+  A bit of fixup for the 404 error page...
+*/
+.igd-page-not-found .block-system-main {
+	display: none;
+}
+/*
+  Styling for the feedback form.
+*/
+#webform-client-form-18 {
+  display: none;
+}
+
+/*
+ * #webform-component-hidden-form2 {
+ *	display: none;
+ * }
+ */
+.igd-feedback-form #edit-actions {
+	display: none;
+}
+.feeback-form-style .form-type-radio {
+	float: left;
+	width: 9%;
+	text-align: center;
+}
+.feeback-form-style .option {
+	display: block;
+}
+.feeback-form-style webform-component-radios {
+	margin: 0;
+}
+.feeback-form-style .webform-component-fieldset {
+	margin: 0;
+}
+.feeback-form-style .form-radios {
+	margin-left: 10%;
+}
+.feeback-form-style .webform-component-fieldset {
+	width: 96%;
+}
+/*
+ * User Profile CSS
+*/
+.user-profile label {
+  font-weight: bold;;
+  display: inline !important;
+}
+.user-profile .views-label {
+  font-weight: bold;
+}
+.user-profile .views-field .field {
+  display: inline !important;
+}
+.user-profile .views-field .field .field-items {
+  display: inline !important;
+}
+.user-profile .views-field .field .field-items .field-item {
+  display: inline !important;
+}
+.user-profile .form-item {
+  margin-top: 0;
+}
+
+/*
+  Styling for affiliate form.
+*/
+.affiliate-form {
+	background-color: #f5f5f5;
+}
+.affiliate-form .form-text {
+	max-width: 100%;
+}
+.affiliate-block ul {
+	margin-left: 1em;
+}
+.affiliate-link:hover {
+	cursor: pointer;
+}
+.affiliate-block div.affiliate-area {
+	border-bottom: solid 2px #ccc;
+}
+div.affiliate-area:last-of-type {
+	border-bottom: none;
+}
+.affiliate-block h3 {
+	margin-top: 20px;
+	color: #006731;
+}
+.affiliate-block p {
+	margin-top: 10px;
+}
+.affiliate-block .student-info1 {
+	width: 50%;
+}
+/*
+  Styling for insurance affilate link area.
+*/
+.insurance-affiliate-block img {
+	width: 100%;
+	height: auto;
+}
+.insurance-affiliate-block {
+	background: #cae7fc;
+}
+/*
+  Styling for the support request form. [jjp005]
+*/
+form.entitytype-support-form div.pre-intructions {
+	margin-top: 25px;
+	font-size: larger;
+	font-weight: bold;
+}
+/*
+  Styling for the practice tests landing page. [jjp007]
+*/
+.practice-tests-landing table th {
+	background-color: #006f12;
+	color: white;
+}
+.practice-tests-landing table td+td, .practice-tests-landing table th {
+	text-align: center;
+}
+.practice-tests-landing .practice-test-purchase {
+	list-style: none;
+}
+.practice-tests-landing td ul {
+	margin: 0;
+}
+.practice-tests-landing td li {
+	margin: 0;
+}
+.practice-tests-landing td li a {
+	text-decoration: none;
+	color: #000;
+}
+.practice-tests-landing ul {
+	list-style: none;
+}
+.practice-tests-landing li {
+	margin-left: 0;
+}
+.promotion-list {
+	list-style-type: disc !important;
+	margin-left: 1.5em;
+}
+div.practice-tests-front-block {
+	padding: 0;
+	background-color: #ffcd00;
+	border-color: black;
+	border-width: 2px;
+}
+div.practice-tests-front-block p {
+	font-size: 1.25em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+/*************************************************
+**************************************************
+Anything below this line is done in its entirety for freemium model
+**************************************************
+*************************************************/
+.vocabulary-partners h2 {
+	font-size: 1.75em;
+}
+.igd-user-menu-tabs {
+	margin-bottom: 10px;
+	border: solid 3px #014cb1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+#login-form {
+	margin-bottom: 10px;
+}
+/*
+  Styling for the /user page.
+*/
+#user_register_form {
+	padding: 5px;
+}
+select,input {
+	max-width: 90%;
+}
+#edit-security-questions .description,
+#edit-security-questions .form-select,
+#edit-security-questions .form-text,
+#user_user_form_group_name .form-text,
+#edit-timezone .description,
+#edit-timezone .form-select {
+	width: 90%;
+}
+.commerce-checkout-form-registration table, .commerce-checkout-form-registration table th, .commerce-checkout-form-registration table td {
+	border: solid 1px color red;
+}
+.commerce-checkout-form-registration th, .sticky-table th {
+	background-color: #63a13b;
+	font-weight: bold;
+}
+/*
+  Styling for /user "My Account" tab.
+*/
+.igd-user-available-products .ui-accordion-content {
+	padding-left: 10px;
+}
+.igd-user-available-products .product-name {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.igd-user-available-products .product-short-description {
+	color: red;
+	margin-left: 10px;
+	font-size: 1em;
+	font-weight: normal;
+}
+.igd-user-available-products .product-icon {
+	margin-right: 5px;
+	float:left;
+}
+.igd-user-available-products .form-submit {
+	padding: 5px 30px;
+	font-size: 1em;
+	margin-top: 10px;
+}
+.igd-user-available-products .ui-accordion-content {
+	padding: 5px;
+}
+.view-my-account .views-label-include-1,
+.view-my-account .views-field-block-head-title {
+	margin-left: 3px;
+}
+.view-my-account .views-field-block-head-title {
+		margin-top: -40px;
+		margin-bottom: 3px;
+}
+.view-my-account .views-label-include-1 {
+	font-size: 1.2em;
+}
+.view-my-account .igd-my-account-status,
+.igd-htr-status .igd-my-account-status {
+	border: 1px inset #ccc;
+	background-color: #f9f9f9;
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%;
+}
+.view-my-account .igd-progress {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 95% !important;
+}
+/*
+*/
+.igd-user-menu-tabs .product-description {
+	font-size: .8em;
+	margin-top: 5px;
+}
+/*
+  Styling for /user "edit" tab.
+*/
+#edit-account,
+#edit-questions,
+#edit-timezone,
+#edit-field-birthdate,
+#user_user_form_group_name,
+.igd-user-menu-tabs .profile {
+	border: inset 2px #000;
+	background-color: #f9f9f9;
+	padding: 5px;
+}
+#edit-account .password-strength {
+	float: none;
+}
+/*
+  Styling for the /users "view" tab.
+*/
+.igd-user-menu-tabs .profile {
+	margin-top: -18px;
+}
+/*
+  Styling for the first time login page (/reset)
+ */
+#user-pass-reset {
+ 	border: solid 3px #014cb1;
+ 	background-color: #fff;
+ 	color: black;
+ 	margin-bottom: 5px;
+ 	padding: 20px 10px 0 10px;
+ 	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+ }
+/**/
+/*
+  Various page action buttons scattered throughout the user management & purchase
+  process pages.
+ */
+.commerce-line-item-views-form .form-submit,
+.commerce-line-item-views-form .delete-line-item,
+#user-profile-form .form-submit,
+#security-questions-user-edit-form .form-submit,
+#user-login .form-submit,
+#user-register-form .form-submit,
+#user-pass .form-submit,
+.commerce-checkout-form-registration .form-submit,
+#user-pass-reset .form-submit,
+#commerce-checkout-form-checkout .form-submit,
+#commerce-checkout-form-complete .form-submit,
+#commerce-checkout-form-review .form-submit {
+	color: #fff;
+	background: #63a13b;
+	text-shadow: none;
+	padding: 5px 10px;
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+.commerce-line-item-views-form .form-submit:hover,
+#user-profile-form .form-submit:hover,
+#security-questions-user-edit-form .form-submit:hover,
+#user-login .form-submit:hover,
+#user-register-form .form-submit:hover,
+#user-pass .form-submit:hover,
+.commerce-checkout-form-registration .form-submit:hover,
+#user-pass-reset .form-submit:hover,
+#commerce-checkout-form-checkout .form-submit:hover,
+#commerce-checkout-form-review .form-submit:hover {
+  box-shadow: inset 0 0 10px #136d20;
+  background: #63a13b;
+}
+.commerce-line-item-views-form .form-submit:active,
+#user-profile-form .form-submit:active,
+#security-questions-user-edit-form .form-submit:active,
+#user-login .form-submit:active,
+#user-register-form .form-submit:active,
+#user-pass .form-submit:active,
+.commerce-checkout-form-registration .form-submit:active,
+#user-pass-reset .form-submit:active,
+#commerce-checkout-form-checkout .form-submit:active,
+#commerce-checkout-form-review .form-submit:active {
+  box-shadow: inset 2px 2px 2px #000;
+  background: #63a13b;
+}
+/*
+  Special styling for cancelling checkout.
+ */
+.commerce-checkout-form-registration .checkout-cancel,
+.commerce-checkout-form-registration .checkout-cancel:hover,
+.commerce-checkout-form-registration .checkout-cancel:active,
+#commerce-checkout-form-checkout #edit-back,
+#commerce-checkout-form-checkout #edit-back:hover,
+#commerce-checkout-form-checkout #edit-back:active,
+#commerce-checkout-form-review #edit-back,
+#commerce-checkout-form-review #edit-back:hover,
+#commerce-checkout-form-review #edit-back:active
+ {
+	background: none;
+	box-shadow: none;
+	color: #0062a0;
+	text-decoration: underline;
+}
+.commerce-checkout-form-registration .button-operator,
+#commerce-checkout-form-review .button-operator {
+	margin-left: 10px;
+}
+/*
+  Style the customer profile billing block.
+*/
+.customer_profile_billing, .customer_profile_shipping {
+	border: inset 2px #000;
+	background-color: #f9f9f9;
+	padding: 5px;
+  min-width: 220px;
+}
+.commerce_payment {
+	border: inset 2px #000;
+	background-color: #f9f9f9;
+	padding: 5px;
+  min-width: 160px;
+}
+.checkout-buttons {
+  margin-right: 25px;
+  float: right;
+}
+.commerce_coupon, .commerce_shipping {
+	border: inset 2px #000;
+	background-color: #f9f9f9;
+	padding: 5px;
+}
+.registration_information, .account {
+	border: inset 2px #000;
+	background-color: #f9f9f9;
+	padding: 5px;
+  min-height: 175px;
+}
+/*
+  Style the tables in the checkout complete page.
+*/
+#edit-checkout-review .pane-title td,
+#xedit-checkout-review td.component-title,
+.commerce-order-commerce-order td.component-title {
+	background-color: #63a13b;
+	color: #fff;
+}
+/*
+  Styling for the billing / shipping divs.
+*/
+.commerce-order-commerce-order .field-name-commerce-customer-billing,
+.commerce-order-commerce-order .field-name-commerce-customer-shipping,
+#commerce-checkout-form-review .commerce_payment {
+	border: inset 2px #000;
+	padding: 5px;
+	background-color: #f9f9f9;
+}
+.commerce-order-commerce-order .field-name-commerce-customer-billing {
+	border-bottom-width: 0;
+}
+
+/*
+ Certificate status listing
+*/
+.igd-my-account-cert-status.cert-list {
+  margin: auto;
+  width: 95%;
+}
+.cert-name {
+  padding-left: 30px;
+}
+address.cert_address {
+    border-style: inset;
+    border-width: 1px;
+    margin-left: 30px;
+    padding: 5px;
+    width: 60%;
+}
+
+/*
+ Style the security question change form.
+*/
+.igd-htr-status .view-content, .igd-htr-status-container {
+  background-color: #fff;
+  border: solid 3px #000;
+  -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+  margin-bottom: 5px;
+  overflow:hidden
+}
+.igd-htr-status-container.htr_ca {
+  background-color: #E8FFFF;
+}
+.igd-htr-status-container.htr_co { 
+  background-color: #FFFFCC;
+}
+.igd-htr-status-container.htr_ga { 
+  background-color: #FFCCFF;
+}
+.igd-htr-status-container.htr_in { 
+  background-color: #DECCFF;
+}
+.igd-htr-status-container.htr_nv { 
+  background-color: #CCFFFF;
+}
+.igd-htr-status-container.htr_oh {
+  background-color: #FFCDCD;
+}
+.igd-htr-status-container.htr_us {
+  background-color: #E5FFCC;
+}
+.igd-htr-status-container.ntsi_fl {
+  /* http://hexcolortool.com/ 80% lightened */
+  background-color: #FFFFCC;
+}
+.igd-htr-status-container.quiz_pack {
+  background-color: #CCFFFF;
+}
+
+.igd-htr-status .status-left {
+  border-bottom: solid 3px #000;
+  xborder-right: solid 3px #000;
+  xmargin-right: -3px;
+  width: 100%;
+  xfloat: left;
+}
+.igd-htr-status .status-right {
+  xborder-left: solid 3px #000;
+  xmargin-left: -3px;
+  width: 100%;
+  xfloat: right;
+}
+.igd-htr-status h2 {
+  margin-bottom: 0;
+  padding-left: 1em;
+  background-color: #1c99de;
+  color: #fff;
+  -moz-border-radius: 7px 7px 0 0 ; -webkit-border-radius: 7px 7px 0 0; border-radius: 7px 7px 0 0;
+}
+.htr_co h2 { 
+  background-color: #dbdb00;
+}
+.htr_ga h2 { 
+  background-color: #cc00b1;
+}
+.htr_in h2 { 
+  background-color: #120075;
+}
+.htr_nv h2 { 
+  background-color: #005a70;
+}
+.htr_oh h2 {
+  background-color: #DF0101;
+}
+.htr_us h2 {
+  background-color: #196E00;
+}
+.ntsi_fl h2 {
+  background-color: #FF6000;
+}
+.quiz_pack h2 {
+  background-color: #00CC99;
+}
+.igd-htr-status p {
+	xmargin: 5px 0 0 16px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.igd-htr-status .headliner {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.igd-htr-status .igd-progress {
+  margin-left: 16px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width: 90%;
+}
+.igd-htr-status .igd-progress-label {
+  float: left;
+  margin-left: 50%;
+  margin-top: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+.igd-htr-status .ui-button {
+  max-width: 45%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.igd-htr-status .status-right p {
+  color: #000;
+}
+.igd-htr-status .status-emphasis {
+    color: red;
+}
+.igd-htr-status .badges-label {
+  margin-top: 60px;
+}
+.igd-htr-status .msg-label {
+  color: green;
+}
+.myaccount-state-selector {
+  margin: 25px auto;
+  width: 50%;
+}
+/*
+ * Styling for the cart page
+ */
+.commerce-checkout-form-registration .component-title,
+#commerce-checkout-form-review .component-title {
+	color: #fff;
+	background-color: #63a13b;
+}
+.commerce-checkout-form-registration #edit-commerce-coupon-coupon-code,
+#commerce-checkout-form-review #edit-commerce-coupon-coupon-code {
+	max-width: 100px;
+}
+.view-commerce-cart-form table td, .view-commerce-cart-form table th {
+  padding: 10px;
+}
+.view-commerce-cart-form table thead tr th {
+  color: #fff;
+  background-color: #63a13b;
+}
+.view-commerce-cart-form table, .view-commerce-cart-form th, .view-commerce-cart-form td {
+  border: solid 1px #63a13b;
+}
+#ajaxcart-cart-account-ajax-wrapper #edit-account-login-mail,
+#ajaxcart-cart-registration-information-ajax-wrapper input.form-text{
+  width:225px;
+}
+/*
+ * Assumes images are in library and this class is added to the div
+ */
+.cart-images {
+  margin: 5px 5px 10px 5px;
+}
+.cart-images img {
+  width: 30%;
+  height: 30%;
+}
+.cart-images .img-center {
+  margin: 0 5%;
+}
+/*
+  Styling for /user "orders" tab
+*/
+.view-commerce-user-orders table .views-field-created,
+.view-commerce-user-orders table .views-field-changed {
+	display: none;
+}
+
+
+/**************************/
+
+
+/*.view-commerce-cart-form table,.view-commerce-cart-form th,.view-commerce-cart-form td {
+  border-style: none;
+  border-collapse: collapse;
+  xbottom-border: solid 1px blue;
+  xbottom-top:  solid 1px blue;
+ }
+.view-commerce-cart-form table tr, .view-commerce-cart-form table td {
+  xborder: 1px solid blue;
+  border-radius: 10px;
+  xborder-top: 1px solid red;
+  xborder-right: 1px solid red;
+  xborder-radius: 10px;
+  x-moz-border-radius-topright : 10px!important;
+  x-webkit-border-radius-topright : 10px!important;
+  xborder-radius-topright : 10px!important;
+    xborder-top-right-radius:10px!important;
+}
+.view-commerce-cart-form table tr {
+  border: 1px solid red;
+}
+
+
+/*.view-commerce-cart-form table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-bottom-left-radius:10px
+}*/
+
+/*.view-commerce-cart-form table tr:last-child td:last-child {
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-bottom-right-radius:10px
+}*/
+
+.field-name-field-tos .description,
+.field-name-field-tos2 .description {
+  height: 500px; /* This is arbitrary */
+  overflow: scroll;
+}
+
+/*
+ Style the TOS click-through description.
+*/
+.field-name-field-tos .description,
+.field-name-field-tos2 .description {
+	height: 200px;
+	background-color: #f9f9f9;
+	border: solid 1px #3d8927;
+	margin-right: 5px;
+	margin-left: 5px;
+	overflow-x: hidden;
+	padding: 5px;
+}
+/*
+  Styling for the state selector drop-down.
+*/
+#edit-field-state-und-autocomplete {
+	background-color: #ccc;
+}
+.form-text form-autocomplete {
+	background-color: #ccc;
+}
+#edit-field-state-und {
+	background-color: #ccc;
+}
+
+/*
+  Styling for the user header mini menu
+*/
+.igd-user-login {
+	padding-left: 10px;
+}
+.igd-user-header-mini-menu {
+  float: right;
+  margin: 32px 10px 0 0;
+}
+.igd-login-image {
+	padding-left: 5px;
+}
+.igd-user-header-mini-menu .igd-user-header {
+  padding-left: 10px;
+  color: white;
+  font-size: 1em;
+}
+/*
+  Styling for the partner pages.
+*/
+/*RC1begin*/
+.term-listing-heading .vocabulary-partners img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px;
+}
+/*RC1end*/
+.term-listing-heading .vocabulary-partners .field-name-field-partner-disclaimer {
+	font-size: .7em;
+}
+/*RC1begin*/
+.term-listing-heading .vocabulary-partners .form-submit {
+	margin-bottom: 20px;
+	padding: 10px 50px;
+}
+/*RC1end*/
+/*
+ * Promo Image
+ */
+img.promo-image {
+  width: 100% !important;
+  height: 100% !important;
+  border-style: none !important;
+  margin-top: -5px !important;
+  margin-bottom: 5px !important;
+}
+div.promo-button:hover {
+	cursor: pointer;
+}
+.promo-button a {
+	color: #fff;
+	text-decoration: none;
+}
+.promo-button span {
+	font-size: 2em;
+}
+/*
+ * Support Ticket Comment blocks
+ */
+.node-support-ticket article {
+  border: solid 1px #3d8927;
+  margin-bottom: 2px;
+}
+
+.node-support-ticket header {
+  display: none;
+}
+
+.node-support-ticket .comment-submitted,
+.node-support-ticket .submitted {
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+
+.node-support-ticket .field-name-comment-body,
+.node-support-ticket .field-name-body {
+  font-size: 1.1em;
+  font-weight:bold;
+}
+
+.node-support-ticket .comment-add {
+  display: none;
+}
+
+ul.tabs.secondary {
+  display:none
+}
+/* End Support */
+
+/* Events list */
+/* Don't display ajax progress indicator for the auto refresh views*/
+.view-display-id-events_list .auto-refresh .ajax-progress {
+  display: none;
+}
+
+.view-display-id-events_list .views-row {
+  padding: 3px;
+}
+
+.view-display-id-events_list .user-picture img {
+  float: left;
+  height: 100px;
+  padding-right: 5px;
+}
+
+.view-display-id-events_list img.event_image {
+  float:right;
+  height:100px;
+  padding-left: 5px;
+}
+
+.view-display-id-events_list hr {
+  margin-bottom: 0;
+}
+
+.view-display-id-events_list p {
+  margin-bottom: 5px;
+  line-height: normal;
+  padding-left: 90px;
+}
+
+.view-display-id-events_list .message span {
+  font-size: 16px !important;
+}
+
+.view-display-id-events_list .name{
+  font-size: 20px;
+  color: #175D00;
+}
+/* End Events list */
+/*
+ * Styling for Games section
+ */
+div.view-id-games_list td {
+	width: 50%;
+}
+div.view-id-games_list td h2 {
+	text-align: center;
+}
+div.view-id-games_list td h3, div.vocabulary-games div.description h3 {
+	margin: .5em 0;
+	font-size: 1.5em;
+}
+div.view-id-games_list div.content img {
+	width: 100%;
+}
+div.view-id-games_list div.description span, div.vocabulary-games div.description span{
+	font-size: 1.2em;
+}
+/*
+ * Styling for individual game pages.
+ */
+div.term-listing-heading div.vocabulary-games {
+	background-color: #FFFFFF;
+	border: 3px solid #014CB1;
+	border-radius: 10px;
+	margin: 0 0 5px;
+	padding: 5px;
+}
+div.vocabulary-games iframe {
+	width: 100%;
+
+}
+div.vocabulary-games div.instructions, div.vocabulary-games div.description {
+	background-color: #ccc;
+	padding: .25em;
+	color: #6a6a6a;
+}
+/*
+  [jjp003] additional styling for table comparison pop-up.
+*/
+/***** Temporary until first paragraph is removed ******/
+/*
+div#modal-content > p:first-of-type {
+	display: none;
+}
+*/
+div#igd-partner-popup h2 {
+	margin-bottom: .25em;
+}
+div#igd-partner-popup span.fdpt {
+	color: #4790d2;
+}
+table#igd-partner-popup th {
+	padding: 10px;
+}
+div#igd-partner-popup table caption {
+	color: #0B6E1A;
+	padding: .25em 0;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+div#igd-partner-popup th, div#igd-partner-popup td{
+	text-align: center;
+	border: solid 1px #fff;
+}
+div#igd-partner-popup th:first-child {
+	background-color: white;
+	border: solid 1px #ccc;
+}
+div#igd-partner-popup th:first-child + th {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+div#igd-partner-popup th:first-child + th + th,
+div#igd-partner-popup th:first-child + th + th + th {
+	background-color: #c6c6c6;
+}
+div#igd-partner-popup td:first-child {
+	text-align: right;
+	border: solid 1px #ccc;
+}
+div#igd-partner-popup td + td {
+	text-align: center;
+}
+div#igd-partner-popup td:first-child + td  { /* second column */
+	background-color: #63A13B;
+	color: white;
+	font-size: 1.2em;
+}
+div#igd-partner-popup td:first-child + td + td, /* third column */
+div#igd-partner-popup td:first-child + td + td + td { /* fourth column */
+	background-color: #c6c6c6;
+	color: white;
+}
+/* so help button goes behind FB flyout */
+aside.region-sidebar-first {
+  z-index: 1 !important;
+}
+
+/* This is a giant hack. */
+div#complete-buttons {
+  margin-right: 25px;
+  width: 70px;
+  margin-left: auto;
+  margin-bottom: 10px
+}
+
+/* white desciption on practice test purchase block */
+.field-name-field-number-of-practice-tests .description {
+  color: white;
+}
+.voucher-information ol {
+	margin-left: 10px;
+}
+
+div.bundle-collection-row {
+  border-style: solid;
+  border-width: 2px;                                                                       -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;                                                                border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+}
+
+.total-bundle-price {
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1em;
+}
+form.commerce-bundle-add-to-cart input[type=submit] {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sidebar Bundles */
+
+div.sidebar-bundle {
+  padding: 10px;
+}
+
+aside.region.grid-4 div.tableize article form {
+  padding: 5px;
+
+}
+aside.region.grid-4 div.tableize article {
+  margin: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: green;
+  border-width: 2px;
+}
+
+aside.region.grid-4 div.tableize article input.form-submit{
+  width: 85%;
+}

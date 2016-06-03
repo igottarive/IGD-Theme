@@ -1,0 +1,386 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/*
+  Blocks to display for narrow, normal, & wide mode that aren't displayed for mobile users.
+*/
+#region-dashboard-sidebar, .igd-slider, .site-header-right, .igd-tip-all, .block-nice-menus-1,
+.igd-feedback-button, .igd-help-button, .site-header-left, .nice-header-setup li.menuparent ul li,
+.igd-rateitall, .nice-header-setup li.menu-parent ul li,.commerce-order-commerce-order .commerce-registration,
+.igd-user-available-products .product-image  {
+	display: 	block;
+}
+.site-footer1 .googleplusone {
+	display: inline;
+}
+/*
+  General styling.
+*/
+.header-slogan {
+	padding-left: 100px;
+}
+.site-header-left {
+	text-align: left;
+}
+.site-header-left .headline-text {
+	text-align: left;
+}
+.site-header-left .secondline-text {
+	font-size: 1.75em;
+	line-height: 1em;
+}
+/*
+  Branding zone setup.
+*/
+.branding-setup {
+	background-size: auto auto, auto auto;
+	height: 66px; /* height of hand... */
+}
+.branding-hand img {
+	height: auto;
+	width: auto;
+	margin-top: 0;
+}
+.branding-url {
+	padding-left: 100px;
+	bottom: 3px;
+}
+.branding-url a {
+	font-size: 1.75em;
+}
+/*
+  Styling for Orion HS link
+ */
+.header-graduation-cap {
+	float: right;
+	margin-bottom: 5px;
+}
+.header-graduation-cap a {
+	color: white;
+	text-decoration: none;
+}
+.header-graduation-cap a:hover {
+	text-decoration: underline;
+}
+#block-delta-blocks-page-title {
+	padding-left: 100px;
+	margin-top: -60px;
+}
+/*
+  Setup so the text does not flow outside of the allocated h1 space.
+*/
+#block-delta-blocks-page-title h1 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-top: 20px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 60%;
+}
+/*
+  The H1 is created by the Delta module and moved up under the menu and occludes the sidebar region at the left. The sidebar first region is set ahead in stacking order so that the links work properly.
+*/
+#region-sidebar-first {
+	z-index: 100;
+}
+/*
+  Padding for the content area.
+*/
+.igd-content-padding {
+	padding-top: 5px;
+}
+/*
+  Provide a class to move past the hand for the first block on a page.
+*/
+.first-block,
+#commerce-checkout-form-complete,
+#commerce-checkout-form-registration,
+#commerce-checkout-form-review,
+.commerce-order-commerce-order,
+.cart-empty-page {
+	padding-top: 25px !IMPORTANT;
+}
+.info-block {
+	padding: 5px 30px;
+}
+.state-info-list {
+	padding: 10px 30px !important;
+}
+/*
+  Styling for purchase block.
+*/
+.purchase-block .views-row-first {
+	background-size: 120px 20px;
+}
+.view-state-page-bundle-listing .form-submit:hover,
+.purchase-block li a:hover, .purchase-block .form-submit:hover,
+.igd-user-available-products li a:hover, .igd-user-available-products .form-submit:hover,
+.term-listing-heading .vocabulary-partners .form-submit:hover {
+	/*background-color: #ffcc00;*/
+	/*background-color: #f1b329;*/
+	/* CSS from colorzilla */
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyYWRpYWxHcmFkaWVudCBpZD0iZyI+PHN0b3Agb2Zmc2V0PSIwLjIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZjYzAwIi8+PC9yYWRpYWxHcmFkaWVudD48cmVjdCB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmNjMDAiIC8+PHJlY3QgeD0iMCUiIHk9Ii00Ny44NDQ4JSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTk1LjY4OTclIiBmaWxsPSJ1cmwoI2cpIiAvPjwvc3ZnPg==);
+background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 114, color-stop(21%, #ffffff), color-stop(100%, #ffcc00));
+background-image: -webkit-radial-gradient(center center, farthest-side circle, #ffffff 21%, #ffcc00 100%);
+background-image: -moz-radial-gradient(center center, farthest-side circle, #ffffff 21%, #ffcc00 100%);
+background-image: -ms-radial-gradient(center center, farthest-side circle, #ffffff 21%, #ffcc00 100%);
+background-image: -o-radial-gradient(center center, farthest-side circle, #ffffff 21%, #ffcc00 100%);
+background-image: radial-gradient(farthest-side circle at center center, #ffffff 21%, #ffcc00 100%);
+}
+.view-state-page-bundle-listing .form-submit:active,
+.purchase-block li a:active, .purchase-block .form-submit:active,
+.igd-user-available-products li a:active, .igd-user-available-products .form-submit:active,
+.term-listing-heading .vocabulary-partners .form-submit:active {
+	box-shadow: 0 2px 2px #888888 inset;
+}
+/*
+  Styling for blog & driving tips all teaser pages (i.e., /blog, /driving-tips).
+*/
+.igd-blog-all, .igd-tip-all {
+	padding-top: 30px !important;
+}
+.node-driving-tip p {
+	padding-top: 30px;
+}
+.node-blog {
+	padding-top: 20px;
+}
+.igd-blog-all h2 a {
+	font-size: 1.2em;
+}
+/*
+  Setup up the background color for the menu zone as it defaults to white for mobile.
+*/
+#zone-menu {
+	background-color: #ccc;
+}
+/*
+  Menu setup everything except mobile.
+*/
+.nice-header-setup li.menuparent ul li, .nice-header-setup li.menu-parent ul li {
+	border-right: solid 1px #666;
+	border-left: solid 1px #666;
+	-moz-border-radius:0 0 0 0; -webkit-border-radius: 0 0 0 0; border-radius: 0 0 0 0;
+	padding: 0;
+	margin: 0;
+}
+.nice-header-setup li.menuparent ul li.odd a:hover, .nice-header-setup li.menuparent ul li.even a:hover,
+.nice-header-setup li.menu-parent ul li a:hover {
+	background-color: #666;
+}
+.nice-header-setup li.menuparent ul li.odd a, .nice-header-setup li.menuparent ul li.even a{
+	background-color: #dfdede;
+}
+.nice-header-setup li.menuparent ul li a.active, .nice-header-setup li.menu-parent ul li a.active {
+	background-color: #666;
+	color: #fff;
+}
+.nice-header-setup li.menuparent ul li.last , .nice-header-setup li.menu-parent ul li.last  {
+	-moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px;
+}
+.nice-header-setup li.menuparent ul li.last a, .nice-header-setup li.menu-parent ul li.last a {
+	-moz-border-radius: 0 0 10px 10px; -webkit-border-radius: 0 0 10px 10px; border-radius: 0 0 10px 10px;
+}
+.nice-header-setup {
+	margin: 5px 0 10px 100px;
+}
+.nice-header-setup a {
+	text-decoration: none;
+	text-transform: none;
+	font-size: 18px;
+	color: #000;
+	font-weight: normal;
+}
+.nice-header-setup ul li a {
+	color: #000;
+}
+.nice-header-setup ul li a.active, .nice-header-setup a.active {
+	color: #fff;
+}
+.nice-header-setup ul li {
+	text-align: center;
+	margin: 0 10px 0 10px;
+	margin: 0!important;
+	border-bottom: solid 1px #666;
+	border-top: solid 1px #666;
+	border-right: solid 1px #666;
+	border-left: none;
+	/* CSS generated from http://www.colorzilla.com/gradient-editor/ */
+	background: #666666; /* Old browsers */
+	background: -moz-linear-gradient(top,  #666666 0%, #666666 13%, #6b6c6c 16%, #7c7c7b 22%, #c9c9c8 44%, #d9d8d9 50%, #dfdede 53%, 		#d9d9d8 56%, #c9c8c9 63%, #868686 81%, #737373 88%, #6c6c6c 91%, #666666 94%, #666666 97%, #777877 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(13%,#666666), color-stop(16%,#6b6c6c), 	color-stop(22%,#7c7c7b), color-stop(44%,#c9c9c8), color-stop(50%,#d9d8d9), color-stop(53%,#dfdede), color-stop(56%,#d9d9d8), color-		stop(63%,#c9c8c9), color-stop(81%,#868686), color-stop(88%,#737373), color-stop(91%,#6c6c6c), color-stop(94%,#666666), color-			stop(97%,#666666), color-stop(100%,#777877)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #666666 0%,#666666 13%,#6b6c6c 16%,#7c7c7b 22%,#c9c9c8 44%,#d9d8d9 50%,#dfdede 53%,#d9d9d8 	56%,#c9c8c9 63%,#868686 81%,#737373 88%,#6c6c6c 91%,#666666 94%,#666666 97%,#777877 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #666666 0%,#666666 13%,#6b6c6c 16%,#7c7c7b 22%,#c9c9c8 44%,#d9d8d9 50%,#dfdede 53%,#d9d9d8 		56%,#c9c8c9 63%,#868686 81%,#737373 88%,#6c6c6c 91%,#666666 94%,#666666 97%,#777877 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #666666 0%,#666666 13%,#6b6c6c 16%,#7c7c7b 22%,#c9c9c8 44%,#d9d8d9 50%,#dfdede 53%,#d9d9d8 		56%,#c9c8c9 63%,#868686 81%,#737373 88%,#6c6c6c 91%,#666666 94%,#666666 97%,#777877 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #666666 0%,#666666 13%,#6b6c6c 16%,#7c7c7b 22%,#c9c9c8 44%,#d9d8d9 50%,#dfdede 53%,#d9d9d8 		56%,#c9c8c9 63%,#868686 81%,#737373 88%,#6c6c6c 91%,#666666 94%,#666666 97%,#777877 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#777877',GradientType=0 ); /* IE6-9 */
+}
+.nice-header-setup a.active {
+	color: #fff ;
+}
+.nice-header-setup ul li:hover {
+	background: #666!important;
+}
+.nice-header-setup ul li.first {
+	-moz-border-radius: 10px 0 0 10px; -webkit-border-radius: 10px 0 0 10px; border-radius: 10px 0 0 10px;
+	border-left: solid 1px #666;
+}
+.nice-header-setup ul li.last {
+	-moz-border-radius: 0 10px 10px 0; -webkit-border-radius: 0 10px 10px 0; border-radius: 0 10px 10px 0;
+}
+.nice-header-setup ul li a:hover {
+	color: #fff !important;
+}
+/*
+  Styling for the slideshow
+*/
+.igd-slider-text {
+	font-size: 1.4em;
+}
+/*
+  Styling for the footer.
+*/
+.site-footer1 .googleplusone {
+	display: inline;
+}
+/*
+  Sizing changes for the rateitall widget.
+*/
+.ria iframe {
+	height: 300px;
+}
+#ria_rating_gadget {
+	border-style: none!important;
+}
+/*
+  Styling the feedback form.
+*/
+.ui-dialog-title-webform-component-hidden-form2 {
+	width: 100% !important;
+}
+.ui-dialog{
+	color: red !important;
+}
+/*************************************************
+**************************************************
+Anything below this line is done in its entirety for freemium model
+**************************************************
+*************************************************/
+/*
+  Styling for the /user page.
+*/
+#login-form {
+	margin-top: 20px;
+}
+.igd-user-menu-tabs {
+	margin-top: 20px;
+}
+/*
+  Styling for /user "edit" tab
+*/
+#edit-account .password-strength {
+	float: right;
+}
+select, input {
+	max-width: 100%;
+}
+#edit-security-questions .description,
+#edit-security-questions .form-select,
+#edit-security-questions .form-text,
+#edit-timezone .description,
+#edit-timezone .form-select {
+	max-width: 50%;
+}
+.igd-htr-status .status-left {
+  border-right: solid 3px #000;
+  border-bottom: 0;
+  margin-right: -3px;
+  width: 50%;
+  float: left;
+}
+.igd-htr-status .status-right {
+  xborder-left: solid 3px #000;
+  xmargin-left: -3px;
+  width: 50%;
+  float: right;
+}
+/*
+  Make the entire view order table visible in alpha grid.
+*/
+.view-commerce-user-orders table .views-field-created,
+.view-commerce-user-orders table .views-field-changed {
+	display: table-cell;
+}
+/*
+  The product-info & product-image divs sit side by side.
+*/
+.igd-user-available-products .product-info {
+	float: left;
+	max-width: 50%;
+}
+.igd-user-available-products .product-image img {
+	float: right;
+	width: 50%;
+	height: auto;
+}
+.igd-user-header-mini-menu {
+  float: right;
+  margin: 32px 20px 0 0;
+}
+
+
+div.bundle-collection-row {
+  border-style: solid;
+  border-width: 2px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  /* margin: 5px; */
+  padding: 20px;
+}
+div.region.grid-8 div.tableize {
+  display: table;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+div.region.grid-8 div.tableize article {
+  position: relative;                                                                      display: table-cell;
+  border-style: solid;                                                                     border-width: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  /* vertical-align: bottom; */
+  /* width: 27%; */
+  /* min-width: 100px; */
+}
+
+div.region.grid-8 div.tableize article .content {
+  padding-bottom: 45px;
+}
+
+div.region.grid-8 div.tableize article div.total-bundle-price {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 24px;
+  width: 100px;
+  margin: auto;
+}
+
+div.region.grid-8 div.tableize article input.form-submit {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 5px;
+  width: 100px;
+  margin: auto;
+  padding: 2px;
+  width: 85%;
+}
+
+
+.commerce-bundle-product-group {
+  padding: 5px;
+}

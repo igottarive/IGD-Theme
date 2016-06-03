@@ -1,0 +1,32 @@
+/*
+  General styling for IE < 9.
+*/
+/*
+  Degrade various items where 2 images are used...
+*/
+.branding-setup {
+	background-image: url("../images/nav_bar_slice.png");
+	background-repeat: repeat-x;
+}
+.igd-fun-facts-menu h2 {
+	background-image: url("../images/fun_facts_menu_gradient.png");
+	background-repeat: repeat-x;
+}
+.igd-driving-tips-menu h2 {
+	background-image: url("../images/green_gradient_bg_300h.png");
+	background-repeat: repeat-x;
+}
+/*
+  Patch-up IE items since the alpha default doesn't get loaded
+*/
+.nice-header-setup ul li a {
+	background-image: url("../images/chrome_gradient_bg.png");
+	background-repeat: repeat-x;
+}
+/********************************* Header Section **********************************************/
+/*
+  Turn off the "feature" background image.
+*/
+.purchase-block .views-row-first {
+	background-image: none;
+}

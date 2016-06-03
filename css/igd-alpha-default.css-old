@@ -1,0 +1,969 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/*
+* Changelog
+*
+*	V0001, initial version, n/n/2012, jjp
+*
+*/
+/*
+  General styling.
+*/
+body {
+	font-family: "Varela Round";
+	font-size: 1em;
+}	
+.igd-header-color {
+	background-color: #72a435;
+}
+.igd-body-color {
+	background-color: #ccc;
+}
+
+ol li, ul li {
+	margin-top: 1.5em;
+	margin-left: 10px;
+}
+.igd-invisible {
+	display: none;
+}
+/*
+  Fix bug with the "previous" pager button.
+*/
+li.pager-previous a {
+	width: 65px !IMPORTANT;
+}
+/*
+  Turn off RSS feed for taxonomy pages.
+*/
+.page-taxonomy .feed-icon {
+	display: none;
+}
+/*
+  Styling for an embedded video container/
+*/
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*
+  Styling for stand-alone blog entries.
+*/
+.node-driving-tip p {
+	padding-top: 30px;
+}
+.node-blog .igd-blog-title, .igd-tip-all .views-field-title {
+	color: #0B6E1A;
+	font-size: 1.2em;
+	font-style: bold;
+	margin-bottom: 1em;
+}
+.node-blog .blog-title {
+	color: #1f4a9f;
+	font-size: 1.2em;
+	font-style: bold;
+	margin-bottom: 5px;
+}
+.node-blog {
+	padding-top: 20px;
+}
+.node-blog h2 {
+	margin-bottom: 0px;
+}
+.node-blog footer {
+	float: left;
+}
+.node-blog .field-type-taxonomy-term-reference .field-item {
+	padding-right: 4px;
+}
+/*
+  Styling for blog & driving tips all teaser pages (i.e., /blog, /driving-tips).
+*/
+.igd-blog-all, .igd-tip-all {
+	padding-top: 30px !important;
+}
+.igd-blog-all .node-blog, .igd-tip-all .views-row {
+	border: none;
+	border-bottom: solid 1px #000;
+	-moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px;
+}
+.igd-blog-all .node-blog footer {
+	float: left;
+}
+.igd-blog-all .node-blog p {
+	clear: both;
+}
+.igd-tip-all img {
+	float:left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.igd-tip-all .views-field-title {
+	margin-top: 10px;
+}
+.igd-tip-all .tips-title {
+	font-size: 1.3em;
+	line-heiht: 1.3em;
+}
+.igd-tip-all .igd-video-no {
+	padding-left: 0px;
+}
+/*
+  Styling for date/author fields for all blog usage.
+*/
+.igd-date-author, .igd-blog-categories footer {
+	font-size: 1em;
+	color: #999999;
+	font-style: italics;
+}
+/*
+  Styling for H2 in all blog usage.
+*/
+.igd-blog-search-results h2, .igd-blog-all h2 {
+	margin-bottom: -4px;
+}
+/*
+  Styling for blog paragraph
+*/
+.igd-blog-search-results p, .igd-blog-all p {
+	margin-top: 15px;
+}
+.igd-blog-search-results .views-row, .igd-blog-all .views-row {
+	border-bottom: 1px solid #999999;
+	margin-bottom: 2px;
+}
+.igd-blog-search-results .views-row-last, .igd-blog-all .views-row-last {
+	border: none;
+	margin-bottom: 0px;
+}
+/*
+  Styling for the category select box on the blog search form.
+*/
+.igd-blog-search .form-select {
+	background-color: #ccc;
+}
+/*
+  Styling for categories label.
+*/
+.igd-categories, .node-blog .field-name-field-terms .field-label {
+	background: url(../images/category_icon.png) no-repeat 0 0;
+	font-size: 0;
+	color: transparent;
+	padding: 16px 10px;
+}
+/*
+  Styling for the blog search form block.
+*/
+.igd-blog-search label, .igd-blog-search .form-text, .igd-blog-search .form-type-select{
+	margin-left: 5px;
+}
+.igd-blog-search label {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 3px;
+}
+.igd-blog-search .form-text {
+	background-color: #ccc;
+	border: none;
+	box-shadow: inset 2px 2px 2px 0 #000;
+	-webkit-box-shadow: inset 2px 2px 2px 0 #000;
+	-moz-box-shadow: inset 2px 2px 2px 0 #000;
+}
+.igd-blog-search .form-submit {
+	height: 27px; /* height of image */
+	width: 33px; /* width of image */
+	background: url(../images/search_magnifyer.png) no-repeat 0 0;
+	border-style: none;
+	font-size: 0;
+	color: transparent;
+	background-color: #014cb1;
+	margin-top: 26px !important;
+}
+.igd-blog-search .views-widget-filter-search_api_views_fulltext {
+	padding-right: .25em;
+}
+.igd-blog-search .views-widget-filter-field_terms {
+	padding-right: .5em;
+}
+/*
+  Styling for the blog search results page.
+*/
+.igd-blog-search-results,  {
+	padding-top: 20px;
+}
+/*
+  Styling for the article categories page(s).
+*/
+.igd-blog-categories .info-block {
+	padding-top: 20px;
+}
+.igd-blog-categories .blog-title {
+	font-size: 0px;
+	color: transparent;
+}
+.igd-blog-categories p {
+	clear: both;
+}
+/*
+  Styling for a blog summary block.
+*/
+.summary-block-blog .view-content {
+	padding: 10px;
+}
+.summary-block-blog .views-field {
+	margin-bottom: 0px;
+}
+.summary-block-blog span {
+	font-size: 1.3em;
+}
+/*
+  Styling for a summary block, customer review block.
+*/
+.summary-block, .igd-customer-reviews {
+	margin: 0px 0 5px 0;
+	background-color: #fff;
+	border: 2px solid #40882e;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.summary-block h2, .igd-customer-reviews h2 {
+	color: #fff !IMPORTANT;
+	font-size: 1.6em;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: -1px -1px 0px -1px;
+	background-image: url("../images/green_gradient_footer.png");
+	background-repeat: repeat-x;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+/*
+  Styling for a program summary block.
+*/
+.summary-block-program .item-list ul {
+/*	padding-top: 5px;
+	padding-right: 5px;*/
+}
+.summary-block-program .item-list li {
+	font-size: 1.1em;
+	margin: 10px 5px;
+	margin-top: 10px;
+}
+.summary-block-program .item-list span {
+	color: #0B6E1A;
+	font-weight: bold;
+}
+/*
+  Styling for Customer Review" block.
+*/
+.igd-customer-reviews p {
+	font-size: 1.2em;
+	color: #0B6E1A;
+	padding: 5px 5px 0px 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+ .igd-customer-reviews ul {
+	padding: 0px 5px 0px 5px;
+	list-style: none;
+	text-align: center;
+	font-size: 1.2em;
+}
+ .igd-customer-reviews ul li {
+	margin-top: 5px;
+}
+/*
+  Styling for the resources block on the student page.
+*/
+.resources-block p {
+	margin: 0px 10px 5px 10px;
+	padding-top: 5px;
+}
+.resources-block .resources-paragraph {
+	border-top: solid 2px #ccc;
+}
+/*
+  Styling for the student-info1 block on the student page.
+*/
+.student-info1 {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+	background-image: url("../images/blue_gradient_footer.png");
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.student-info1 span {
+	font-size: 1.2em;
+}
+/*
+  Now for the state information block on the student page. jjp
+*/
+.state-info-list {
+	padding: 10px 30px !important;
+}
+.state-info-list h2 {
+	font-size: 1.75em;
+}
+.state-info-list h3 {
+	margin-bottom: 0px;
+	margin-top: .4em;
+}
+.state-info-list .view-content {
+	height: 600px;
+	overflow-y: scroll;
+	width: 50%;
+}
+.state-info-list .view-header {
+	width: 45%;
+	float: right;
+}
+.state-info-list .view-content {
+	background-color: #ccc;
+	padding-left: 1em;
+}
+.state-info-list .view-content .state-name {
+	margin-top: 2em;
+}
+.state-info-list img {
+	width: 35px;
+	height: auto;
+}
+.state-info-list .state-name {
+	color: red;
+}
+.state-info-list ul {
+	list-style-image:url("../images/check_symbol.png");
+	list-style-position: inside;
+	margin-top: 10px;
+}
+.state-info-list li {
+	margin-top: 0;
+	margin-left: 0;
+}
+.state-info-list .info-header {
+	padding: 0px 2em;
+}
+.state-info-list .view-footer {
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+.state-info-list-group {
+	border-bottom: solid 1px #000;
+	margin-right: 10px;
+}
+.state-info-list .views-row-last
+	border: 0 !important;
+}
+/* 
+  Styling for the rateiall gadget. jjp .ria_gadget_footer
+*/
+.ria iframe {
+	height: 345px;
+	width: 296px;
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px;
+}
+#ria_rating_gadget {
+	border: 0;
+	width: 296px;
+	height: 345px;
+	background-color:red;
+}
+.igd-rateitall {
+	border: 2px solid #1374a1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin-bottom: 5px;
+}
+/*
+  Styling for FAQ page(s).
+*/
+.faqs h2 {
+	margin-bottom: 10px;
+}
+.faqs .views-field-title {
+	font-size: 1.2em;
+	color: #0B6E1A;
+	margin-bottom: 5px;
+}	
+.faqs .views-field-field-answer {
+	margin-bottom: 10px;
+}
+/********************************* Header Section **********************************************/
+/*
+  General header styles
+*/
+.site-header-left, .site-header-right {
+	padding-top: 5px;
+	z-index: 11;
+}
+.site-header-left {
+	margin-left: 40px;
+	white-space: nowrap;
+}
+.site-header-left .headline-text {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #1f4a9f;
+}
+.site-header-left .secondline-text {
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: bold;
+	color: #1f4a9f;
+}
+.site-header-left a {
+	font-size: 28px;
+	line-height: 28px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #fff;
+}
+.header-slogan {
+	padding-left: 100px;
+}
+/*
+  Styling for the header contact information.
+*/
+#header-contact-info {
+	font-size: 1.1em;
+	margin-bottom: 0px;
+}
+.igd-login {
+	margin-right: 30px;
+	margin-top: 25px;
+	float: right;
+}
+.igd-login a {
+	color: #fff;
+	text-decoration: none;
+	padding-left: 4px;
+	line-height: 27px;
+}
+.igd-login img {
+	padding-top: 5px;
+}
+/*
+  Setup for the "feedback / help flags" in the header section.
+*/
+.igd-feedback-button img, .igd-help-button img {
+	float: right;
+	margin-top: 5px;
+}
+.igd-feedback-form .form-radios .form-item { 
+   float: left;
+   width: 10%; 
+}
+.igd-feedback-form .form-item label.option { 
+	display: inline;
+	padding-top: 10px;
+	width: 100%;
+	float: left;
+	padding-left: 2px;
+}
+.igd-feedback-form {
+	margin: 5px;
+}
+.igd-feedback-form {
+	background-color: #fff;
+/*	border: 2px solid #0B6E1A;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;*/
+	padding: 15px 15px 0px 15px;
+}
+.igd-feedback-form hr {
+	color: green;
+	background-color: #0B6E1A;
+	height: 1px !IMPORTANT;
+}
+/*.igd-feedback-form .webform-component-fieldset div.form-item {
+  display:inline;
+  /*float:left;*/
+}
+.igd-feedback-form .webform-component-fieldset div.form-item .form-item {
+	position:inherit;
+	color: red;
+}
+/*.igd-feedback-form .webform-component-fieldset label {
+	color: red;
+	margin-top: 20px;
+}*//*
+.igd-feedback-form #edit-submitted-overall-experience-user-grade label {
+	color: red;
+	padding-top: 100px;
+}
+*/
+/*
+  Menu zone setup. Note height of menu zone must match the height of the largest element (ie, the hand…).
+*/
+.menu-setup {
+	height: 66px; /* height of hand... */
+	margin-top: -23px;
+	background-image: url("../images/nav_bar_end.png"), url("../images/nav_bar_slice.png");
+	background-repeat: no-repeat, repeat-x;
+	background-position: right, center;
+}
+.menu-hand {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 66px; /* height of hand... */
+	z-index:10;
+}
+/*
+  Header nice menu setup.
+*/
+.nice-header-setup {
+	position: absolute;
+	top: 32px;
+	left: 100px;
+}
+.nice-header-setup ul li {
+	list-style: none;
+	font-size: 1em;
+	border: none;
+}
+.nice-header-setup ul.nice-menu li {
+	margin-right: 30px;
+}
+/*.nice-header-setup ul.nice-menu li.last {
+	position: relative;
+	right: 0px;
+	float:right;
+}*/
+.nice-header-setup ul li a:link, .nice-header-setup ul li a:hover, .nice-header-setup ul li a:visited, .nice-header-setup ul li a:active {
+	text-decoration: none!important;
+	background-color: #0B6E1A;
+}
+.nice-header-setup ul li a:link, .nice-header-setup ul li a:visited {
+	color: #fff;
+}
+.nice-header-setup ul li a:hover {
+	color: #df601d;
+}
+.nice-header-setup ul li .active, .nice-header-setup ul li a:active {
+	color: #95b4e7!important;
+}
+.nice-header-setup ul.nice-menu ul li, .nice-setup ul.nice-menu ul li li{
+	border-bottom: 1px solid #000;
+}
+.nice-header-setup ul.nice-menu, .nice-header-setup ul.nice-menu ul, .nice-header-setup ul.nice-menu li {
+	border: none;
+}
+/*
+  The "sub header" area. jjp
+*/
+.igd-user-zone {
+	min-height: 80px;
+}
+.igd-header-message {
+	margin-left: 100px;
+	border-bottom: 2px solid #0B6E1A;
+	height: 45px;
+}
+.igd-header-message p {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 10px;
+	color: #1b759f;
+}
+/********************************* Content Section **********************************************/
+/*
+  General content styling.
+*/
+.content-styling H1 {
+	font-family: "Varela Round";
+	font-size: 1.8em;
+	line-height: 1em;
+	margin: 0px 0px 0px 100px;
+	padding-top: 5px;
+	color: #0B6E1A;
+}
+.content-styling H2 {
+	font-family: "Varela Round";
+	color: #006633;
+}
+.content-styling H3 {
+	font-family: "Varela Round";
+	font-style: italic;
+}
+.content-styling HR {
+	color: #014cb1;
+	height: 3px;
+}
+/*
+  Info block styling.
+*/
+.info-block {
+	background-color: #fff;
+	border: solid 3px #014cb1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin: 0px 0 5px 0;
+	padding: 5px 30px 5px 30px;
+}
+.info-block .headline-text {
+	font-family: "Varela Round";
+	font-size: 20px;
+	color: #0b6e1a;
+}
+.info-block .secondline-text {
+	font-family: "Varela Round";
+	font-size: 18px;
+	font-style: italic;
+	color: #000;
+}
+/*
+  Provide a class to move past the hand for the first block on a page.
+*/
+.first-block {
+	padding-top: 25px !IMPORTANT;
+}
+/*
+  State selector box styling
+*/
+.state-selector {
+	background-image: url("../images/green_gradient_bg_300h.png");
+	background-repeat: repeat-x;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 5px;
+}
+.state-selector .headline-text {
+	font-family: "Varela Round";
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+}
+.state-selector .secondline-text {
+	font-family: "Varela Round";
+	font-size: 16px;
+	line-height: 18px;
+	color: #000;
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+}
+.state-selector .container-inline {
+	/*margin-left:30px;*/
+	margin-left: auto;
+	margin-right: auto;
+	width:150px;
+	margin-bottom: 10px;
+}
+.state-selector .ctools-jump-menu-button {
+	margin-left: 10px;
+}
+/*
+  Styling for the movie.
+*/
+.igd-movie {
+	border: solid 10px #136d20;
+	border-bottom: solid 6px #136d20;
+	background-color: #136d20;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin-bottom: 5px;
+}
+/*
+  State page styling.
+*/
+.igd-state-generic-info-block .item-list ul, .igd-state-generic-info-block .item-list li{
+	margin:0px;
+}
+.igd-state-generic-info-block {
+	/*margin-left: 100px;*/
+}
+.igd-state-generic-info-block img {
+	border: solid 1px #d8d8d8;
+	margin-right: 15px;
+	float: left;
+}
+.igd-practice-tests iframe {
+	width: 100%;
+	height: 400px;
+}
+/*
+  Styling for the state tabs
+*/
+.state-tabs  {
+	border: solid 3px #014cb1;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+	margin-bottom: 5px;
+}
+.state-tabs img {
+	border: 3px groove #2E90BD;
+	margin: 5px 5px 0 0;
+	width: 25%;
+}
+.state-tabs li {
+	list-style: decimal outside none;
+}
+.state-tabs ol {
+	margin-left: 15px;
+}
+.state-selector-block .secondline-text {
+}
+/*
+  Styling for the infographics (a.k.a., fun facts) menu.
+*/
+.igd-fun-facts-menu {
+	margin-bottom: 5px;
+	background-color: #fff;
+	border: solid 2px #398dcf;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-fun-facts-menu h2 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	padding: 5px 0px;
+	margin: -1px -1px 0px -1px;
+	color: #fff;
+	text-align: center;
+	background-image: url("../images/finger_bullseye.png"),url("../images/fun_facts_menu_gradient.png");
+	background-repeat: no-repeat, repeat-x;
+	background-position: 10px 0px;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-fun-facts-menu ul li {
+	list-style: none;
+	font-size: 1.25em;	
+	margin: 0px 10px;
+	padding: .25em 0 .25em .5em;
+	border-bottom: solid 1px #cccccc;
+}
+.igd-fun-facts-menu ul li.last {
+	border-bottom: none !important;
+}
+.igd-fun-facts-menu ul.menu li  .active {
+	color: #0062A0 !important;
+}
+.igd-fun-facts-menu ul.menu li a:hover {
+	color: #fff !important;
+}
+.igd-fun-facts-menu ul li a:link {
+	color: #000 !important;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:visited {
+	color: #000 !important;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:hover {
+	color: #fff !important;
+	background-color: #1e68ba;
+	text-decoration: none;
+}
+.igd-fun-facts-menu ul li a:active  {
+	text-decoration: none;
+}
+/*
+  Styling for the driving tips menu.
+*/
+.igd-video-yes {
+	padding-left: 30px;
+	background-image: url("../images/video_icon_blue_25x11.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.igd-video-no {
+	padding-left: 30px;
+}
+.igd-driving-tips-menu {
+	margin-top: 5px;
+	background-color: #fff;
+	border: solid 2px #40882e;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-driving-tips-menu h2 {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	padding: 5px 0px 5px 50px;
+	margin: -1px -1px 0px -1px;
+	color: #fff;
+	text-align: center;
+	background-image: url("../images/car_icon.png"),url("../images/green_gradient_bg_300h.png");
+	background-repeat: no-repeat, repeat-x;
+	background-position: 5px center, 5px 0px;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-driving-tips-menu ul {
+	margin: 0px;
+}
+.igd-driving-tips-menu ul li {
+	list-style: none;
+	font-size: 1.25em;	
+	margin: 0px 10px;
+	padding: .25em 0 .25em .5em;
+	border-bottom: solid 1px #cccccc;
+}
+.igd-driving-tips-menu ul li.views-row-last {
+	border-bottom: none;
+}
+.igd-driving-tips-menu ul li a:link,
+.igd-driving-tips-menu ul li a:hover,
+.igd-driving-tips-menu ul li a:visited,
+.igd-driving-tips-menu ul li a:active {
+	text-decoration: none;
+}
+.igd-driving-tips-menu ul li a:visited {
+	color: #000;
+}
+.igd-driving-tips-menu ul li:hover {
+	background-color: #88def9;
+}
+.igd-driving-tips-menu ul li a.active, .igd-driving-tips-menu ul li a:hover {
+	color: #0062A0;
+}
+/********************************* Footer Section **********************************************/
+/*
+  Footer Styles
+*/
+.site-footer1 {
+	background-image: url("../images/blue_gradient_footer.png");
+}
+.site-footer2 {
+	background-image: url("../images/green_gradient_footer.png");
+}
+.site-footer2 .footer-info {
+	text-align: center;
+	font-size: 12px;
+	color:#fff;
+	padding-bottom: 10px;
+}
+/*
+  Footer nice menu setup
+*/
+.nice-footer-setup ul li {
+	list-style: none;
+	font-size: 1em;
+	border: none;
+	border-right: 1px solid #fff;
+	background-color: transparent;
+}
+.nice-footer-setup ul li.last {
+	border: none !important;
+}
+.nice-footer-setup ul li a:link, .nice-footer-setup a:hover,.nice-footer-setup a:visited,.nice-footer-setup a:active {
+	text-decoration: none;
+}
+.nice-footer-setup ul li a:link, .nice-footer-setup ul li a:visited {
+	color: #fff;
+}
+.nice-footer-setup ul li a:hover {
+	color: #df601d;
+}
+.nice-footer-setup ul li .active, .nice-footer-setup ul li a:active {
+	color: #95b4e7!important;
+	background-color: transparent;
+}
+/******************************* slideshow **********************************************/
+/*
+  General flexslider setup.
+*/
+.igd-slider .flexslider {
+	margin: 0px 0px 5px 0px;
+}
+.igd-slider .flex-nav-container {
+	margin-bottom: 0px;
+}
+/*
+  Setup controls - both side and bottom.
+*/
+.igd-slider .flex-direction-nav .flex-prev {
+	opacity: 1;
+	left: 0px;
+}
+.igd-slider .flex-direction-nav .flex-next {
+	opacity: 1;
+	right: 0px;
+}
+.igd-slider .flex-direction-nav a {
+	height: 60px;
+	width: 40px;
+	background: url("../images/igd_bg_direction_nav.png");
+	background-repeat: no-repeat;
+	margin: -35px 0 0;
+}
+.igd-slider .flexslider {
+	border: solid 30px #1374a1;
+	background-color: #fff;
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+.igd-slider .flex-control-nav {
+	bottom: 2px;
+}
+.igd-slider .flex-control-paging li a.flex-active {
+	height: 16px;
+	width: 18px;
+	background-image: url("../images/slider_dot_active.png");
+}
+.igd-slider .flex-control-paging li a {
+	height: 15px;
+	width: 16px;
+	background-image: url("../images/slider_dot_inactive.png");
+}
+.igd-slider .views_slideshow_controls_text {
+	visibility: hidden;
+}
+/*
+  Setup the box within the slider
+*/
+.igd-slider .flexslider {
+	padding-bottom: 10px;
+}
+.igd-slider h2 {
+	margin-bottom: 0px;
+	font-size: 2em;
+	margin: 0px;
+}
+.igd-slider li {
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+}
+.igd-slider-text {
+	width: 49%;
+	float:right;
+	font-size: 1.25em;
+}
+/*
+  Note that that the text is encapsulated in a <p> if there are more than 1 slide...
+*/
+.igd-slider p {
+	margin: 0px 10px 0px 0px;
+}
+.igd-slider-image {
+	width: 49%;
+	height: auto;
+	padding-bottom: 10px;
+}
+/*
+  Styling for specific pages. 
+*/
+/* 
+  Styling for generic pages where the "main page content" block was used with context. This is needed as there is no way
+  to assign a class to the block within context. Note it is assumed that the "main page content" block will be the first
+  block on a page.
+*/
+.igd-main-block .info-block {
+	padding-top: 20px;
+}
+/*
+  A bit of fixup for the 404 error page...
+*/
+.igd-page-not-found .block-system-main {
+	display: none;
+}
+/********************************* testing **********************************************/
+

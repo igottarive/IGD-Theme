@@ -1,0 +1,29 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+body {
+	font-size: 1em;
+}
+.nice-header-setup ul li {
+	width: 103px;
+}
+.nice-header-setup a {
+	font-size: 16px;
+}
+.purchase-block .final-price {
+	margin-top: -34px;
+}
+/*
+  Styling for the rateiall gadget.
+*/
+#ria_rating_gadget iframe, .ria iframe, .ria_gadget_footer{
+	width: 296px;
+}
+#ria_rating_gadget {
+	width: 295px!important;
+}
+
+div.region.grid-8 div.tableize article {
+  width: 160px;
+}

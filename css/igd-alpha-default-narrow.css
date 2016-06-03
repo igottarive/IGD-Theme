@@ -1,0 +1,118 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal
+ *  and widescreen CSS files as appropriate.
+ *
+*/
+/********************************* Content Section **********************************************/
+
+/*
+  General content styling.
+*/
+body {
+	font-size: .9em;
+}
+.content-styling H2 {
+	font-size: 1.2em;
+}
+.igd-slider-text {
+	font-size: 1.2em;
+}
+/********************************* Header Section **********************************************/
+/*
+  Styling for the header contact information.
+*/
+#header-contact-info {
+	font-size: 1em;
+	margin-bottom: 0px;
+}
+.branding-url a {
+	font-size: 1.75em;
+}
+/*
+  Set main menu.
+*/
+.nice-header-setup ul li {
+	width: 71px;
+}
+.nice-header-setup a {
+	font-size: 12px;
+}
+.nice-header-setup li.menuparent ul li, .nice-header-setup li.menu-parent ul li {
+	width: 125px;
+}
+/*
+  Styling for the mini-menu
+*/
+.igd-login-image {
+	padding-left: 20px !important;
+}
+/*
+  Constrain the blog search box for this width.
+*/
+.igd-blog-search #edit-search-api-views-fulltext {
+	max-width: 210px;
+}
+/*
+  Text size for the sub-header message area.
+*/
+.igd-header-message {
+	font-size: 1.3em;
+}
+/*
+  Styling for the h1.
+*/
+#block-delta-blocks-page-title h1 {
+	font-size: 1.3em;
+	line-height: 1.6em;
+}
+/*
+  Purchase block styling.
+*/
+
+.purchase-block .views-row-first {
+	background-size: 60px 20px;
+}
+/*
+  Styling for the rateitall gadget in narrow form.
+*/
+
+.xria iframe {
+	background-color:red;
+	width: 216px;
+}
+.xria_gadget_footer {
+	width: 216px;
+}
+.xigd-rateitall #ria_rating_gadget {
+	width: 216px;
+}
+#ria_rating_gadget iframe, .ria iframe, .ria_gadget_footer{
+	width: 216px;
+}
+#ria_rating_gadget {
+	width: 214px!important;
+}
+
+
+/*
+  Styling for the state tabs.
+*/
+.state-tabs .ui-tabs-nav a {
+	font-size: .9em;
+}
+/*
+  Styling for student page state into list.
+*/
+.state-info-list .view-footer {
+	letter-spacing: .5px;
+}
+.igd-user-available-products .available-product .product-short-description {
+	font-size: .8em;
+}
+
+div.region.grid-8 div.tableize article {
+  width: 107px;
+  /* min-height: 201px; */
+  /* vertical-align: middle; */
+}
